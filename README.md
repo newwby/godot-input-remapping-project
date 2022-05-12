@@ -1,7 +1,9 @@
 # godot-input-remapping-project
 An unfinished repo demonstrating the input remapping system utilised in my game 'Star Survivors'
 
-**To be clear**: this is sample code and not a functioning project. In particular the scenes that manage the included gdscript files are not included. I would like to build a community plugin (ideally after Godot 4.0 releases later this year), which would include everything necessary to run in any project, but it is not currently a high priority. It is a considerably mess at the moment, as I am midway through reparenting various functions for better readability and simpler function flow. If it is something you'd really like to see, feel free to bug me until I uncouple the scenes & tidy/document the remapper properly for release.
+**To be clear**: this is sample code and not a functioning project. In particular the scenes that manage the included gdscript files are not included. I would like to build a community plugin (ideally after Godot 4.0 releases later this year), which would include everything necessary to run in any project, but it is not currently a high priority.
+
+The included scripts are a considerable mess at the moment, as I am midway through reparenting various functions for better readability and simpler function flow. If it is something you'd really like to see, feel free to bug me until I uncouple the scenes & tidy/document the remapper properly for release.
 
 Of note all singletons (GlobalRef, GlobalDebug, GlobalData) are not included. All you need to know about these three is that their respective functions handle access to file paths (Ref), the method in which to log errors (Debug), and loading/writing to disk (Data).
 

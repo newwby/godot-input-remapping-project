@@ -13,7 +13,7 @@ Of note all singletons (GlobalRef, GlobalDebug, GlobalData) are not included. Al
 
 The loose structure of the input remap handling goes as follows:
 
-1) The Options Input Submenu reads the Project Input Map an creates 'Input Action Entry' scenes for each action registered.
+1) The Options Input Submenu reads the Project Input Map and creates 'Input Action Entry' scenes for each action registered.
 2) The Input Action Entry scenes each create platform-specific buttons under their purview (each button displays the currently mapped input).
 3) The Options Input Submenu calls the DataManager to load input mappings from disk. These overwrite the default project input map.
 4) The Options Input Submenu connects the button.pressed signal of each button to the Input Prompt Popup.
@@ -22,7 +22,9 @@ The loose structure of the input remap handling goes as follows:
 7) The relevant Input Action Entry is called, and it stores the new input information under its own scope.
 8) The Input Action Entry calls the Project Input Map and rewrites the event data for the corresponding action.
 9) The Input Action Entry calls all its child button nodes to display their correct 
+
 10a) On exiting and confirming changes, the Options Input Submenu calls the DataManager to save these changes to disk.
+
 10b) If the player does not confirm changes, the Options Input Submenu calls the DataManager to reload the project input map from disk, as it did it step 3.
 
 Feel free to ask for any clarification as necessary!

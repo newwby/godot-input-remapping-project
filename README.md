@@ -21,7 +21,7 @@ The loose structure of the input remap handling goes as follows:
 6) If the player enters an input, the Input Prompt Popup returns this information, and button information, to the Options Input Submenu.
 7) The relevant Input Action Entry is called, and it stores the new input information under its own scope.
 8) The Input Action Entry calls the Project Input Map and rewrites the event data for the corresponding action.
-9) The Input Action Entry calls all its child button nodes to display their correct 
+9) The Input Action Entry calls all its child button nodes to display their correct input label or texture.
 
 10a) On exiting and confirming changes, the Options Input Submenu calls the DataManager to save these changes to disk.
 
